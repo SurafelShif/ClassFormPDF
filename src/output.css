@@ -602,6 +602,15 @@ video {
   width: 100%;
 }
 
+.w-\[12\%\] {
+  width: 12%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .flex-auto {
   flex: 1 1 auto;
 }
