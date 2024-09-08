@@ -13,6 +13,14 @@
         margin: 0;
       }
     }
+    @font-face {
+      font-family: "Noto Sans Hebrew";
+      src: url("/fonts/NotoSansHebrew-VariableFont_wdth,wght.ttf")
+        format("truetype");
+      font-weight: 100 900; /* Define the weight range */
+      font-stretch: 75% 125%; /* Define the width range */
+      font-style: normal;
+    }
     html {
       width: 100%;
       height: 100vh;
@@ -23,6 +31,8 @@
     body {
       width: 210mm;
       height: 297mm;
+      background: white;
+      font-family: "Noto Sans Hebrew", sans-serif;
     }
     .svg-container {
       position: absolute;
@@ -61,60 +71,36 @@
     </div>
     <main class="h-full w-full flex flex-col items-center justify-between">
       <header class="w-full flex flex-col justify-between items-center">
-        <span class="">- מוגבל -</span>
+        <span class="text-[#7F7F7F] font-medium text-lg">- מוגבל -</span>
         <div class="w-full flex justify-between">
-          <div class="flex gap-2">
-            <img
-              src="hatal-icon.svg"
-              alt="logo-hatal"
-              class="w-[50px] h-auto"
-            />
-            <img src="emet-icon.svg" alt="emet" class="w-[50px] h-auto" />
+          <div class="flex gap-2 items-center">
+            <img src="hatal-icon.png" alt="logo-hatal" class="w-16 h-16" />
+            <img src="emet-icon.png" alt="emet" class="w-[74px] h-[74px]" />
           </div>
-          <img src="bam-icon.svg" alt="bam" class="w-[50px] h-auto" />
+          <img src="bam-icon.png" alt="bam" class="w-16 h-16" />
         </div>
 
         <div class="w-full justify-center flex flex-col items-center">
-          <span class="font-bold">אישור כניסה לתעשייה / חברה:</span>
-          <span>טופס מספר #122</span>
+          <h1 class="font-bold text-xl">אישור כניסה לתעשייה / חברה: רפאל</h1>
+          <p class="text-gray-400 font-light text-lg">טופס מספר #122</p>
         </div>
       </header>
 
-      <section
-        class="rounded-t-lg w-full border-black border flex flex-col justify-center items-center"
-      >
-        <div class="w-full grid grid-flow-col bg-black text-white">
-          <div class="table-title">ת.ז</div>
-          <div class="table-title">מ.א</div>
-          <div class="table-title">שם מלא</div>
-          <div class="table-title">דרגה</div>
-          <div class="table-title">סיווג</div>
-          <div class="table-title">ת.סיווג</div>
-          <div class="table-title">טלפון</div>
-        </div>
-        <div class="w-full grid grid-flow-col">
-          <div class="table-content">123456789</div>
-          <div class="table-content">123456</div>
-          <div class="table-content">סוראפל שיפראוו</div>
-          <div class="table-content">רבט</div>
-          <div class="table-content">סודי ביותר קהילתי</div>
-          <div class="table-content">24/08/2024</div>
-          <div class="table-content">0532219252</div>
-        </div>
-      </section>
-
       <footer
-        class="w-full flex flex-col justify-center truncate items-center text-center leading-120"
+        class="w-full flex flex-col text-[#9E9E9E] justify-center truncate items-center text-center leading-120"
       >
         <p class="whitespace-nowrap">
-          טלפון לבירורים
+          טלפון לבירורים 03-7373515
           <br />
-          משרד קב"ם
+          משרד קב”ם חט”ל
         </p>
 
-        <span class="text-light whitespace-nowrap">
-          פותח על ידי מסגרת אמ”ת ©
-        </span>
+        <p class="text-light whitespace-nowrap mt-1 mb-4">
+          הופק ע”י מערכת ניהול אישורים חט”ל
+          <br />
+          פותח ע”י מסגרת אמ”ת
+        </p>
+        <span class="text-[#787677] font-medium text-lg">- מוגבל -</span>
       </footer>
     </main>
   </body>
