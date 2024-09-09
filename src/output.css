@@ -610,6 +610,19 @@ video {
   width: 100%;
 }
 
+.w-\[12\%\] {
+  width: 12%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -632,6 +645,14 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .truncate {
