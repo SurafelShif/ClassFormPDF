@@ -1,287 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
-    <title>Document</title>
-  </head>
-  <style>
-    @media print {
-      @page {
-        size: A4;
-        margin: 0;
-      }
-    }
-    @font-face {
-      font-family: "Noto Sans Hebrew";
-      src: url("/fonts/NotoSansHebrew-VariableFont_wdth,wght.ttf")
-        format("truetype");
-      font-weight: 100 900; /* Define the weight range */
-      font-stretch: 75% 125%; /* Define the width range */
-      font-style: normal;
-    }
-    html {
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      background-color: black;
-    }
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			href="./output.css"
+			rel="stylesheet"
+		/>
+		<title>Document</title>
+	</head>
+	<style>
+		@media print {
+			@page {
+				size: A4;
+				margin: 0;
+			}
+		}
+		@font-face {
+			font-family: "Noto Sans Hebrew";
+			src: url("/fonts/NotoSansHebrew-VariableFont_wdth,wght.ttf")
+				format("truetype");
+			font-weight: 100 900; /* Define the weight range */
+			font-stretch: 75% 125%; /* Define the width range */
+			font-style: normal;
+		}
+		html {
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			background-color: black;
+		}
 
-    body {
-      width: 210mm;
-      height: 297mm;
-      box-sizing: border-box;
-      font-family: "Noto Sans Hebrew", sans-serif;
-    }
-    .svg-container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  </style>
-  <body class="p-5 relative bg-white" dir="rtl">
-    <div class="svg-container items-center justify-center hidden">
-      <img src="background.svg" alt="IDF" class="w-full h-full" />
-    </div>
-    <div class="h-full w-full flex flex-col items-center justify-between">
-      <header class="w-full flex flex-col justify-between items-center">
-        <span class="text-[#7F7F7F] font-medium text-lg">- מוגבל -</span>
-        <div class="w-full flex justify-between">
-          <div class="flex gap-2 items-center">
-            <img src="hatal-icon.png" alt="logo-hatal" class="w-16 h-16" />
-            <img src="emet-icon.png" alt="emet" class="w-[74px] h-[74px]" />
-          </div>
-          <img src="bam-icon.png" alt="bam" class="w-16 h-16" />
-        </div>
+		body {
+			width: 210mm;
+			height: 297mm;
+			box-sizing: border-box;
+			font-family: "Noto Sans Hebrew", sans-serif;
+		}
+		.svg-container {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+	<body
+		class="p-5 relative bg-white"
+		dir="rtl"
+	>
+		<div class="svg-container items-center justify-center hidden">
+			<img
+				src="background.svg"
+				alt="IDF"
+				class="w-full h-full"
+			/>
+		</div>
+		<div class="h-full w-full flex flex-col items-center justify-between">
+			<header class="w-full flex flex-col justify-between items-center">
+				<span class="text-[#7F7F7F] font-medium text-lg">- מוגבל -</span>
+				<div class="w-full flex justify-between">
+					<div class="flex gap-2 items-center">
+						<img
+							src="hatal-icon.png"
+							alt="logo-hatal"
+							class="w-16 h-16"
+						/>
+						<img
+							src="emet-icon.png"
+							alt="emet"
+							class="w-[74px] h-[74px]"
+						/>
+					</div>
+					<img
+						src="bam-icon.png"
+						alt="bam"
+						class="w-16 h-16"
+					/>
+				</div>
 
-        <div class="w-full justify-center flex flex-col items-center">
-          <h1 class="font-bold text-xl">אישור כניסה לתעשייה / חברה: רפאל</h1>
-          <p class="text-gray-400 font-light text-lg">טופס מספר #122</p>
-        </div>
-      </header>
-      <main
-        class="flex-auto w-full flex flex-col whitespace-nowrap items-center"
-      >
-        <section class="w-full flex flex-col">
-          <div class="flex items-center">
-            <span class="font-bold">תאריך הפקת אישור:</span>
-            <span class="text-base">09/09/2024</span>
-          </div>
-          <div class="flex items-center">
-            <span class="font-bold">שם התעשייה / חברה:</span>
-            <span class="text-base">רפאל</span>
-          </div>
-          <div class="flex items-center">
-            <span class="font-bold">תאריך תחילת אישור כניסה:</span>
-            <span class="text-base">18/09/2024</span>
-          </div>
-          <div class="flex items-center">
-            <span class="font-bold">תאריך סיום אישור כניסה:</span>
-            <span class="text-base">18/09/2024</span>
-          </div>
-          <div class="flex items-center">
-            <span class="font-bold">סיבת הביקור:</span>
-            <span class="text-base">רפאל</span>
-          </div>
-          <div>
-            <span class="font-bold">פרטי איש קשר מהתעשייה:</span>
-            <div class="bg-black text-white text-center flex gap-2 px-2">
-              <div class="w-[200px]">שם מלא</div>
-              <div class="w-[98px]">טלפון</div>
-            </div>
-          </div>
-        </section>
-        <section class="flex flex-col items-center gap-1">
-          <h2 class="font-semibold">רשימת מורשים</h2>
-          <!-- Header -->
-          <div class="border border-black w-full rounded-t-lg overflow-hidden">
-            <div class="w-full bg-black text-white text-center flex gap-2 px-2">
-              <div class="w-5 whitespace-nowrap"></div>
-              <div class="w-[83px] whitespace-nowrap font-semibold">ת.ז</div>
-              <div class="w-[65px] whitespace-nowrap font-semibold">מ.א</div>
-              <div class="flex-1 max-w-[159px] truncate font-semibold">
-                שם מלא
-              </div>
-              <div class="w-[45px] whitespace-nowrap font-semibold">דרגה</div>
-              <div class="w-[124px] whitespace-nowrap font-semibold">סיווג</div>
-              <div class="w-[86px] whitespace-nowrap font-semibold">
-                ת.סיווג
-              </div>
-              <div class="w-[98px] whitespace-nowrap font-semibold">טלפון</div>
-            </div>
-            <!-- content -->
-            <div
-              class="w-full max-w-full flex text-center px-2 gap-2 p-1 border-b border-black"
-            >
-              <div class="w-5 whitespace-nowrap">01</div>
-              <div class="w-[83px] whitespace-nowrap">123456789</div>
-              <div class="w-[65px] whitespace-nowrap">1234567</div>
-              <div class="flex-1 max-w-[159px] truncate">
-                סוראפל סוראפל סוראפל סוראפל
-              </div>
-              <div class="w-[45px] whitespace-nowrap">רב סרן</div>
-              <div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
-              <div class="w-[86px] whitespace-nowrap">24/08/2024</div>
-              <div class="w-[98px] whitespace-nowrap">053-2219252</div>
-            </div>
-            <div
-              class="w-full max-w-full flex text-center px-2 gap-2 p-1 border-b border-black"
-            >
-              <div class="w-5 whitespace-nowrap">02</div>
-              <div class="w-[83px] whitespace-nowrap">123456789</div>
-              <div class="w-[65px] whitespace-nowrap">1234567</div>
-              <div class="flex-1 max-w-[159px] truncate">שרה לאה גורנשטיין</div>
-              <div class="w-[45px] whitespace-nowrap">רב סרן</div>
-              <div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
-              <div class="w-[86px] whitespace-nowrap">24/08/2024</div>
-              <div class="w-[98px] whitespace-nowrap">053-2219252</div>
-            </div>
-            <div
-              class="w-full max-w-full flex text-center px-2 gap-2 p-1 border-b border-black"
-            >
-              <div class="w-5 whitespace-nowrap">03</div>
-              <div class="w-[83px] whitespace-nowrap">123456789</div>
-              <div class="w-[65px] whitespace-nowrap">1234567</div>
-              <div class="flex-1 max-w-[159px] truncate">
-                יונתן אליהו עוזיאל
-              </div>
-              <div class="w-[45px] whitespace-nowrap">רב סרן</div>
-              <div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
-              <div class="w-[86px] whitespace-nowrap">24/08/2024</div>
-              <div class="w-[98px] whitespace-nowrap">053-2219252</div>
-            </div>
-            <div
-              class="w-full max-w-full flex text-center px-2 gap-2 p-1 border-b border-black"
-            >
-              <div class="w-5 whitespace-nowrap">04</div>
-              <div class="w-[83px] whitespace-nowrap">123456789</div>
-              <div class="w-[65px] whitespace-nowrap">1234567</div>
-              <div class="flex-1 max-w-[159px] truncate">
-                אופיר גולדנבורגר גולדברג
-              </div>
-              <div class="w-[45px] whitespace-nowrap">רב סרן</div>
-              <div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
-              <div class="w-[86px] whitespace-nowrap">24/08/2024</div>
-              <div class="w-[98px] whitespace-nowrap">053-2219252</div>
-            </div>
-            <div
-              class="w-full max-w-full flex text-center px-2 gap-2 p-1 border-b border-black"
-            >
-              <div class="w-5 whitespace-nowrap">05</div>
-              <div class="w-[83px] whitespace-nowrap">123456789</div>
-              <div class="w-[65px] whitespace-nowrap">1234567</div>
-              <div class="flex-1 max-w-[159px] truncate">
-                סוראפל סוראפל סוראפל סוראפל
-              </div>
-              <div class="w-[45px] whitespace-nowrap">רב סרן</div>
-              <div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
-              <div class="w-[86px] whitespace-nowrap">24/08/2024</div>
-              <div class="w-[98px] whitespace-nowrap">053-2219252</div>
-            </div>
-            <div
-              class="w-full max-w-full flex text-center px-2 gap-2 p-1 border-b border-black"
-            >
-              <div class="w-5 whitespace-nowrap">06</div>
-              <div class="w-[83px] whitespace-nowrap">123456789</div>
-              <div class="w-[65px] whitespace-nowrap">1234567</div>
-              <div class="flex-1 max-w-[159px] truncate">
-                סוראפל סוראפל סוראפל סוראפל
-              </div>
-              <div class="w-[45px] whitespace-nowrap">רב סרן</div>
-              <div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
-              <div class="w-[86px] whitespace-nowrap">24/08/2024</div>
-              <div class="w-[98px] whitespace-nowrap">053-2219252</div>
-            </div>
-            <div
-              class="w-full max-w-full flex text-center px-2 gap-2 p-1 border-b border-black"
-            >
-              <div class="w-5 whitespace-nowrap">07</div>
-              <div class="w-[83px] whitespace-nowrap">123456789</div>
-              <div class="w-[65px] whitespace-nowrap">1234567</div>
-              <div class="flex-1 max-w-[159px] truncate">
-                סוראפל סוראפל סוראפל סוראפל
-              </div>
-              <div class="w-[45px] whitespace-nowrap">רב סרן</div>
-              <div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
-              <div class="w-[86px] whitespace-nowrap">24/08/2024</div>
-              <div class="w-[98px] whitespace-nowrap">053-2219252</div>
-            </div>
-            <div
-              class="w-full max-w-full flex text-center px-2 gap-2 p-1 border-b border-black"
-            >
-              <div class="w-5 whitespace-nowrap">08</div>
-              <div class="w-[83px] whitespace-nowrap">123456789</div>
-              <div class="w-[65px] whitespace-nowrap">1234567</div>
-              <div class="flex-1 max-w-[159px] truncate">
-                סוראפל סוראפל סוראפל סוראפל
-              </div>
-              <div class="w-[45px] whitespace-nowrap">רב סרן</div>
-              <div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
-              <div class="w-[86px] whitespace-nowrap">24/08/2024</div>
-              <div class="w-[98px] whitespace-nowrap">053-2219252</div>
-            </div>
-            <div
-              class="w-full max-w-full flex text-center px-2 gap-2 p-1 border-b border-black"
-            >
-              <div class="w-5 whitespace-nowrap">09</div>
-              <div class="w-[83px] whitespace-nowrap">123456789</div>
-              <div class="w-[65px] whitespace-nowrap">1234567</div>
-              <div class="flex-1 max-w-[159px] truncate">
-                סוראפל סוראפל סוראפל סוראפל
-              </div>
-              <div class="w-[45px] whitespace-nowrap">רב סרן</div>
-              <div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
-              <div class="w-[86px] whitespace-nowrap">24/08/2024</div>
-              <div class="w-[98px] whitespace-nowrap">053-2219252</div>
-            </div>
-            <div class="w-full max-w-full flex text-center px-2 gap-2 p-1">
-              <div class="w-5 whitespace-nowrap">10</div>
-              <div class="w-[83px] whitespace-nowrap">123456789</div>
-              <div class="w-[65px] whitespace-nowrap">1234567</div>
-              <div class="flex-1 max-w-[159px] truncate">
-                סוראפל סוראפל סוראפל סוראפל
-              </div>
-              <div class="w-[45px] whitespace-nowrap">רב סרן</div>
-              <div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
-              <div class="w-[86px] whitespace-nowrap">24/08/2024</div>
-              <div class="w-[98px] whitespace-nowrap">053-2219252</div>
-            </div>
-          </div>
-        </section>
-        <section class="w-full flex justify-end flex-col items-end mt-3">
-          <span class="font-semibold text-[15px]"
-            >אושר ע"י ביטחון מידע חט"ל</span
-          >
-          <div
-            class="w-full flex justify-end font-open-sans text-[#979797] text-xs items-center"
-          >
-            <img src="./signature.png" alt="signature" class="w-16 h-16" />
-            <div class="text-right">
-              <h3 class="font-bold">נחתם דיגיטלית</h3>
-              <p>ראובן ביטון , קב"ם חט”ל</p>
-              <p>123456789 , 123456</p>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer
-        class="w-full flex flex-col text-light gap-1 text-[#9E9E9E] justify-center items-center text-center leading-120"
-      >
-        <p class="whitespace-nowrap">
-          טלפון לבירורים 03-7373515
-          <br />
-          משרד קב”ם חט”ל
-        </p>
+				<div class="w-full justify-center flex flex-col items-center">
+					<h1 class="font-bold text-xl">אישור כניסה לתעשייה / חברה: רפאל</h1>
+					<p class="text-gray-400 font-light text-lg">טופס מספר #122</p>
+				</div>
+			</header>
+			<main
+				class="flex-auto w-full flex flex-col whitespace-nowrap items-center"
+			>
+				<section class="w-full flex flex-col">
+					<div class="flex items-center">
+						<span class="font-bold">תאריך הפקת אישור:</span>
+						<span class="text-base">09/09/2024</span>
+					</div>
+					<div class="flex items-center">
+						<span class="font-bold">שם התעשייה / חברה:</span>
+						<span class="text-base">רפאל</span>
+					</div>
+					<div class="flex items-center">
+						<span class="font-bold">תאריך תחילת אישור כניסה:</span>
+						<span class="text-base">18/09/2024</span>
+					</div>
+					<div class="flex items-center">
+						<span class="font-bold">תאריך סיום אישור כניסה:</span>
+						<span class="text-base">18/09/2024</span>
+					</div>
+					<div class="flex items-center">
+						<span class="font-bold">סיבת הביקור:</span>
+						<span class="text-base">רפאל</span>
+					</div>
+					<div>
+						<span class="font-bold">פרטי איש קשר מהתעשייה:</span>
+						<div class="bg-black text-white text-center flex gap-2 px-2">
+							<div class="w-[200px]">שם מלא</div>
+							<div class="w-[98px]">טלפון</div>
+						</div>
+					</div>
+				</section>
+				<section class="flex flex-col items-center gap-1">
+					<h2 class="font-semibold">רשימת מורשים</h2>
+					<!-- Header -->
+					<div class="border border-black w-full rounded-t-lg overflow-hidden">
+						<div class="w-full bg-black text-white text-center flex gap-2 px-2">
+							<div class="w-5 whitespace-nowrap"></div>
+							<div class="w-[83px] whitespace-nowrap font-semibold">ת.ז</div>
+							<div class="w-[65px] whitespace-nowrap font-semibold">מ.א</div>
+							<div class="flex-1 max-w-[159px] truncate font-semibold">
+								שם מלא
+							</div>
+							<div class="w-[45px] whitespace-nowrap font-semibold">דרגה</div>
+							<div class="w-[124px] whitespace-nowrap font-semibold">סיווג</div>
+							<div class="w-[86px] whitespace-nowrap font-semibold">
+								ת.סיווג
+							</div>
+							<div class="w-[98px] whitespace-nowrap font-semibold">טלפון</div>
+						</div>
+						<!-- content -->
+						<div
+							class="w-full max-w-full flex text-center px-2 gap-2 p-1 border-b border-black"
+						>
+							<div class="w-5 whitespace-nowrap">01</div>
+							<div class="w-[83px] whitespace-nowrap">123456789</div>
+							<div class="w-[65px] whitespace-nowrap">1234567</div>
+							<div class="flex-1 max-w-[159px] truncate">
+								סוראפל סוראפל סוראפל סוראפל
+							</div>
+							<div class="w-[45px] whitespace-nowrap">רב סרן</div>
+							<div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
+							<div class="w-[86px] whitespace-nowrap">24/08/2024</div>
+							<div class="w-[98px] whitespace-nowrap">053-2219252</div>
+						</div>
+						<div
+							class="w-full max-w-full flex text-center px-2 gap-2 p-1 border-b border-black"
+						>
+							<div class="w-5 whitespace-nowrap">02</div>
+							<div class="w-[83px] whitespace-nowrap">123456789</div>
+							<div class="w-[65px] whitespace-nowrap">1234567</div>
+							<div class="flex-1 max-w-[159px] truncate">שרה לאה גורנשטיין</div>
+							<div class="w-[45px] whitespace-nowrap">רב סרן</div>
+							<div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
+							<div class="w-[86px] whitespace-nowrap">24/08/2024</div>
+							<div class="w-[98px] whitespace-nowrap">053-2219252</div>
+						</div>
+						<div
+							class="w-full max-w-full flex text-center px-2 gap-2 p-1 border-b border-black"
+						>
+							<div class="w-5 whitespace-nowrap">03</div>
+							<div class="w-[83px] whitespace-nowrap">123456789</div>
+							<div class="w-[65px] whitespace-nowrap">1234567</div>
+							<div class="flex-1 max-w-[159px] truncate">
+								יונתן אליהו עוזיאל
+							</div>
+							<div class="w-[45px] whitespace-nowrap">רב סרן</div>
+							<div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
+							<div class="w-[86px] whitespace-nowrap">24/08/2024</div>
+							<div class="w-[98px] whitespace-nowrap">053-2219252</div>
+						</div>
+						<div
+							class="w-full max-w-full flex text-center px-2 gap-2 p-1 border-b border-black"
+						>
+							<div class="w-5 whitespace-nowrap">04</div>
+							<div class="w-[83px] whitespace-nowrap">123456789</div>
+							<div class="w-[65px] whitespace-nowrap">1234567</div>
+							<div class="flex-1 max-w-[159px] truncate">
+								אופיר גולדנבורגר גולדברג
+							</div>
+							<div class="w-[45px] whitespace-nowrap">רב סרן</div>
+							<div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
+							<div class="w-[86px] whitespace-nowrap">24/08/2024</div>
+							<div class="w-[98px] whitespace-nowrap">053-2219252</div>
+						</div>
+						<div
+							class="w-full max-w-full flex text-center px-2 gap-2 p-1 border-b border-black"
+						>
+							<div class="w-5 whitespace-nowrap">05</div>
+							<div class="w-[83px] whitespace-nowrap">123456789</div>
+							<div class="w-[65px] whitespace-nowrap">1234567</div>
+							<div class="flex-1 max-w-[159px] truncate">
+								סוראפל סוראפל סוראפל סוראפל
+							</div>
+							<div class="w-[45px] whitespace-nowrap">רב סרן</div>
+							<div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
+							<div class="w-[86px] whitespace-nowrap">24/08/2024</div>
+							<div class="w-[98px] whitespace-nowrap">053-2219252</div>
+						</div>
+						<div
+							class="w-full max-w-full flex text-center px-2 gap-2 p-1 border-b border-black"
+						>
+							<div class="w-5 whitespace-nowrap">06</div>
+							<div class="w-[83px] whitespace-nowrap">123456789</div>
+							<div class="w-[65px] whitespace-nowrap">1234567</div>
+							<div class="flex-1 max-w-[159px] truncate">
+								סוראפל סוראפל סוראפל סוראפל
+							</div>
+							<div class="w-[45px] whitespace-nowrap">רב סרן</div>
+							<div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
+							<div class="w-[86px] whitespace-nowrap">24/08/2024</div>
+							<div class="w-[98px] whitespace-nowrap">053-2219252</div>
+						</div>
+						<div
+							class="w-full max-w-full flex text-center px-2 gap-2 p-1 border-b border-black"
+						>
+							<div class="w-5 whitespace-nowrap">07</div>
+							<div class="w-[83px] whitespace-nowrap">123456789</div>
+							<div class="w-[65px] whitespace-nowrap">1234567</div>
+							<div class="flex-1 max-w-[159px] truncate">
+								סוראפל סוראפל סוראפל סוראפל
+							</div>
+							<div class="w-[45px] whitespace-nowrap">רב סרן</div>
+							<div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
+							<div class="w-[86px] whitespace-nowrap">24/08/2024</div>
+							<div class="w-[98px] whitespace-nowrap">053-2219252</div>
+						</div>
+						<div
+							class="w-full max-w-full flex text-center px-2 gap-2 p-1 border-b border-black"
+						>
+							<div class="w-5 whitespace-nowrap">08</div>
+							<div class="w-[83px] whitespace-nowrap">123456789</div>
+							<div class="w-[65px] whitespace-nowrap">1234567</div>
+							<div class="flex-1 max-w-[159px] truncate">
+								סוראפל סוראפל סוראפל סוראפל
+							</div>
+							<div class="w-[45px] whitespace-nowrap">רב סרן</div>
+							<div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
+							<div class="w-[86px] whitespace-nowrap">24/08/2024</div>
+							<div class="w-[98px] whitespace-nowrap">053-2219252</div>
+						</div>
+						<div
+							class="w-full max-w-full flex text-center px-2 gap-2 p-1 border-b border-black"
+						>
+							<div class="w-5 whitespace-nowrap">09</div>
+							<div class="w-[83px] whitespace-nowrap">123456789</div>
+							<div class="w-[65px] whitespace-nowrap">1234567</div>
+							<div class="flex-1 max-w-[159px] truncate">
+								סוראפל סוראפל סוראפל סוראפל
+							</div>
+							<div class="w-[45px] whitespace-nowrap">רב סרן</div>
+							<div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
+							<div class="w-[86px] whitespace-nowrap">24/08/2024</div>
+							<div class="w-[98px] whitespace-nowrap">053-2219252</div>
+						</div>
+						<div class="w-full max-w-full flex text-center px-2 gap-2 p-1">
+							<div class="w-5 whitespace-nowrap">10</div>
+							<div class="w-[83px] whitespace-nowrap">123456789</div>
+							<div class="w-[65px] whitespace-nowrap">1234567</div>
+							<div class="flex-1 max-w-[159px] truncate">
+								סוראפל סוראפל סוראפל סוראפל
+							</div>
+							<div class="w-[45px] whitespace-nowrap">רב סרן</div>
+							<div class="w-[124px] whitespace-nowrap">סודי ביותר קהילתי</div>
+							<div class="w-[86px] whitespace-nowrap">24/08/2024</div>
+							<div class="w-[98px] whitespace-nowrap">053-2219252</div>
+						</div>
+					</div>
+				</section>
+				<section class="w-full flex justify-end flex-col items-end mt-3">
+					<span class="font-semibold text-[15px]"
+						>אושר ע"י ביטחון מידע חט"ל</span
+					>
+					<div
+						class="w-full flex justify-end font-open-sans text-[#979797] text-xs items-center"
+					>
+						<img
+							src="./signature.png"
+							alt="signature"
+							class="w-16 h-16"
+						/>
+						<div class="text-right">
+							<h3 class="font-bold">נחתם דיגיטלית</h3>
+							<p>ראובן ביטון , קב"ם חט”ל</p>
+							<p>123456789 , 123456</p>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer
+				class="w-full flex flex-col text-light gap-1 text-[#9E9E9E] justify-center items-center text-center leading-120"
+			>
+				<p class="whitespace-nowrap">
+					טלפון לבירורים 03-7373515
+					<br />
+					משרד קב”ם חט”ל
+				</p>
 
-        <p class="whitespace-nowrap">
-          הופק ע”י מערכת ניהול אישורים חט”ל
-          <br />
-          פותח ע”י מסגרת אמ”ת
-        </p>
-      </footer>
-    </div>
-  </body>
+				<p class="whitespace-nowrap">
+					הופק ע”י מערכת ניהול אישורים חט”ל
+					<br />
+					פותח ע”י מסגרת אמ”ת
+				</p>
+			</footer>
+		</div>
+	</body>
 </html>
