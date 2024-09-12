@@ -32,7 +32,6 @@
 			height: 100vh;
 			display: flex;
 			justify-content: center;
-			background-color: black;
 		}
 
 		body {
@@ -49,6 +48,10 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
+		}
+		.break {
+			word-wrap: break-word;
+			overflow-wrap: break-word;
 		}
 	</style>
 	<body
@@ -161,7 +164,7 @@
 						<!-- content -->
 
 						<div
-							class="relative w-full max-w-full max-h-14 flex text-center px-2 py-1 gap-2 items-center border-b border-black last:border-b-0"
+							class="relative w-full max-w-full max-h-14 flex text-center px-2 py-1 justify-between items-center border-b border-black last:border-b-0"
 						>
 							<hr class="border-l border-black h-full right-[34px] absolute" />
 							<div class="w-7 whitespace-nowrap pl-2 min-h-full content-center">
@@ -170,8 +173,10 @@
 
 							<div class="w-[83px] whitespace-nowrap">123456789</div>
 							<div class="w-[65px] whitespace-nowrap">1234567</div>
-							<div class="flex-auto max-w-[150.69px] whitespace-normal">
-								שרה לאה גורנשטיין
+							<div
+								class="flex-auto max-w-[150.69px] break whitespace-normal text-ellipsis overflow-hidden max-h-12"
+							>
+								יונתן אליהו עוזיאל רפאל אופיר גולדנברג סוראפל
 							</div>
 							<div class="w-[45px] whitespace-nowrap">רב סרן</div>
 							<div class="w-[124px] whitespace-nowrap">סודי ביותר קהיליה</div>

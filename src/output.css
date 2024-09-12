@@ -586,6 +586,10 @@ video {
   height: 100%;
 }
 
+.max-h-12 {
+  max-height: 3rem;
+}
+
 .max-h-14 {
   max-height: 3.5rem;
 }
@@ -716,6 +720,10 @@ video {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
 }
 
 .whitespace-normal {
