@@ -49,6 +49,9 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
+		.grid-col {
+			grid-template-columns: 26px 81px 62px 110px 34px 112px 80px 94px;
+		}
 		.break {
 			word-wrap: break-word;
 			overflow-wrap: break-word;
@@ -147,41 +150,44 @@
 					<h2 class="font-semibold">רשימת מורשים</h2>
 					<!-- Header -->
 					<div class="border border-black w-full rounded-t-lg overflow-hidden">
-						<div class="w-full bg-black text-white text-center flex gap-2 px-2">
-							<div class="w-7 whitespace-nowrap"></div>
-							<div class="w-[83px] whitespace-nowrap font-semibold">ת.ז</div>
-							<div class="w-[65px] whitespace-nowrap font-semibold">מ.א</div>
-							<div class="flex-auto max-w-[159px] truncate font-semibold">
-								שם מלא
-							</div>
-							<div class="w-[45px] whitespace-nowrap font-semibold">דרגה</div>
-							<div class="w-[124px] whitespace-nowrap font-semibold">סיווג</div>
-							<div class="w-[86px] whitespace-nowrap font-semibold">
-								ת.סיווג
-							</div>
-							<div class="w-[98px] whitespace-nowrap font-semibold">טלפון</div>
+						<div
+							class="grid grid-col justify-between bg-black text-white text-center px-1"
+						>
+							<div class="whitespace-nowrap"></div>
+							<div class="whitespace-nowrap font-semibold">ת.ז</div>
+							<div class="whitespace-nowrap font-semibold">מ.א</div>
+							<div class="whitespace-nowrap font-semibold">שם מלא</div>
+							<div class="whitespace-nowrap font-semibold">דרגה</div>
+							<div class="whitespace-nowrap font-semibold">סיווג</div>
+							<div class="whitespace-nowrap font-semibold">ת.סיווג</div>
+							<div class="whitespace-nowrap font-semibold">טלפון</div>
 						</div>
 						<!-- content -->
-
 						<div
-							class="relative w-full max-w-full max-h-14 flex text-center px-2 py-1 justify-between items-center border-b border-black last:border-b-0"
+							class="relative grid grid-col justify-between items-center text-center pl-1 py-1 border-b border-black last:border-b-0"
 						>
-							<hr class="border-l border-black h-full right-[34px] absolute" />
-							<div class="w-7 whitespace-nowrap pl-2 min-h-full content-center">
-								01
-							</div>
-
-							<div class="w-[83px] whitespace-nowrap">123456789</div>
-							<div class="w-[65px] whitespace-nowrap">1234567</div>
-							<div
-								class="flex-auto max-w-[150.69px] break whitespace-normal text-ellipsis overflow-hidden max-h-12"
-							>
-								יונתן אליהו עוזיאל רפאל אופיר גולדנברג סוראפל
-							</div>
-							<div class="w-[45px] whitespace-nowrap">רב סרן</div>
-							<div class="w-[124px] whitespace-nowrap">סודי ביותר קהיליה</div>
-							<div class="w-[86px] whitespace-nowrap">24/08/2024</div>
-							<div class="w-[98px] whitespace-nowrap">053-2219252</div>
+							<div class="whitespace-nowrap content-center px-1">01</div>
+							<hr class="border-l border-black h-full right-[26px] absolute" />
+							<div class="whitespace-nowrap">123456789</div>
+							<div class="whitespace-nowrap">1234567</div>
+							<div class="truncate">יונתן אליהו עוזיאל</div>
+							<div class="whitespace-nowrap">טוראי</div>
+							<div class="whitespace-nowrap">סודי ביותר קהיליה</div>
+							<div class="whitespace-nowrap">05/05/2024</div>
+							<div class="whitespace-nowrap">052-7576444</div>
+						</div>
+						<div
+							class="relative grid grid-col justify-between items-center text-center pl-1 py-1 border-b border-black last:border-b-0"
+						>
+							<div class="whitespace-nowrap content-center px-1">01</div>
+							<hr class="border-l border-black h-full right-[26px] absolute" />
+							<div class="whitespace-nowrap">123456789</div>
+							<div class="whitespace-nowrap">1234567</div>
+							<div class="truncate">יונתן אליהו עוזיאל</div>
+							<div class="whitespace-nowrap">טוראי</div>
+							<div class="whitespace-nowrap">סודי ביותר קהיליה</div>
+							<div class="whitespace-nowrap">05/05/2024</div>
+							<div class="whitespace-nowrap">052-7576444</div>
 						</div>
 					</div>
 				</section>
